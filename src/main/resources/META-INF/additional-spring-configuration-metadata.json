@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "p6spy.config.appender",
+      "type": "java.lang.String",
+      "description": "Description for p6spy.config.appender."
+  }
+] }
