@@ -7,7 +7,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldNameConstants;
-import mybatis.mate.annotation.Algorithm;
+//import mybatis.mate.annotation.Algorithm;
+//import mybatis.mate.annotation.Algorithm;
+//import mybatis.mate.annotation.FieldEncrypt;
 import mybatis.mate.annotation.Algorithm;
 import mybatis.mate.annotation.FieldEncrypt;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,11 +27,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserInfo {
 
+
     @FieldEncrypt(algorithm = Algorithm.PBEWithHMACSHA512AndAES_256)
     private String username;
-    @FieldEncrypt(algorithm = Algorithm.PBEWithHMACSHA512AndAES_256)
+
+   // @FieldEncrypt(algorithm = Algorithm.PBEWithHMACSHA512AndAES_256)
     private String password;
 
-    @TableId("userId")
+    @TableId("user_id")
     private String userId;
 }

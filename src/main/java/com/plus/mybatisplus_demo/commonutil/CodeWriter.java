@@ -29,6 +29,7 @@ public class CodeWriter {
                     builder.parent("com.baomidou.mybatisplus.samples.generator") // 设置父包名
                             .moduleName("CoderWriter") // 设置父包模块名
 
+
                             .pathInfo(Collections.singletonMap(OutputFile.xml, "D://code")); // 设置mapperXml生成路径
                 })
                 .strategyConfig(builder -> {

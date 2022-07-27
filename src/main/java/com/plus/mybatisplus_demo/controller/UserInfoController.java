@@ -44,7 +44,6 @@ public class UserInfoController {
             wrapper.eq(Objects.nonNull(userInfo.getPassword()),"password",userInfo.getPassword());
         }
         UpdateWrapper<Region> updateWrapper = new UpdateWrapper<>();
-
         //wrapper.setEntity(userInfo)
         //.orderBy(true,true,"number");
         //not(i -> i.eq("name", "李白").ne("status", "活着"))

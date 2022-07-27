@@ -16,12 +16,7 @@
 
 
     <dependencies>
-        <!-- freemark模板引擎依赖 -->
-        <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>2.3.23</version>
-        </dependency>
+
         <!-- p6spy:SQL分析打印组件-->
         <dependency>
             <groupId>p6spy</groupId>
@@ -36,33 +31,49 @@
 <!--            <version>1.2.5</version>-->
 <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>com.baomidou</groupId>-->
-<!--            <artifactId>mybatis-mate-annotation</artifactId>-->
-<!--            <version>1.0.8</version>-->
-<!--        </dependency>-->
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-mate-annotation</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-mate-starter</artifactId>
+            <version>1.0.8</version>
+        </dependency>
 
 
 <!--        SpringBoot配置处理-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>2.7.0</version>
             <optional>true</optional>
-        </dependency>
-
-        <!--        Mybatis-plus代码生成依赖-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.5.3</version>
         </dependency>
 
         <!--        mybatis-plus依赖-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.2</version>
+            <version>3.5.2</version>
+            <scope>compile</scope>
         </dependency>
+        <!--        Mybatis-plus代码生成依赖-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.5.3</version>
+        </dependency>
+        <!-- freemark模板引擎依赖 -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.31</version>
+        </dependency>
+
+
+
         <!-- web启动器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -70,15 +81,17 @@
             <version>2.7.0</version>
         </dependency>
 
+
 <!--        mysql驱动-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.28</version>
+            <version>8.0.29</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>2.7.0</version>
             <scope>test</scope>
             <exclusions>
                 <exclusion>
@@ -91,6 +104,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
         </dependency>
     </dependencies>
 
